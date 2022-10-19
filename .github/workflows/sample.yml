@@ -10,8 +10,6 @@ jobs:
         run: |
           echo "npm -v:"
           npm -v
-          echo "python -v"
-          python -v
           echo "cat"
           cat
           echo "node -v"
