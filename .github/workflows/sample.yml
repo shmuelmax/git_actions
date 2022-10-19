@@ -12,7 +12,7 @@ jobs:
           npm -v
           echo "cat"
           cat
-          eccho "node -v-3" 
+          echo "node -v-3" 
           node -v
       - name: run python command
         run: |
