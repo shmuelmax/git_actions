@@ -8,8 +8,12 @@ jobs:
         run: echo "my test"
       - name: multi line script
         run: |
+          echo "npm -v:"
           npm -v
+          echo "python -v"
           python -v
+          echo "cat"
           cat
+          echo "node -v"
           node -v
         
