@@ -12,6 +12,6 @@ jobs:
           npm -v
           echo "cat"
           cat
-          echo "node -v"
+          echo "node -v-2"
           node -v
         
