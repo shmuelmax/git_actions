@@ -11,7 +11,7 @@ jobs:
           echo "npm -v:"
           npm -v
           echo "cat"
-          cat
+          ls -la
           echo "node -v-3" 
           node -v
       - name: run python command
@@ -19,4 +19,8 @@ jobs:
           import platform
           print(platform.processor())
         shell: python
+  run-windows-machine:
+    runs-on: windows-latest
+    steps:
+      -
         
