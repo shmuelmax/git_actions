@@ -5,10 +5,10 @@ jobs:
     runs-on: ubuntu-latest 
     steps:
       - name: "check checkout action" 
-        uses: actions/checkout@latest
+        uses: actions/checkout@v2.5.0
       - name: "test_action"
         id: "test_id"
-        uses: actions/hello-world-javascript-action@v2.5.0
+        uses: actions/hello-world-javascript-action@v1
         with:  
           who-to-greet: muly max
       - name: "test2"
