@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest 
     steps:
       - name: "check checkout action" 
-        uses: actions/checkout@Latest
+        uses: actions/checkout@latest
       - name: "test_action"
         id: "test_id"
         uses: actions/hello-world-javascript-action@v1.1
