@@ -4,10 +4,14 @@ jobs:
   my-new-job:
     runs-on: ubuntu-latest 
     steps:
+      - name: "check checkout action" 
+        uses: actions/checkout@Latest
       - name: "test_action"
         id: "test_id"
         uses: actions/hello-world-javascript-action@v1.1
-        with:
+        with:  
           who-to-greet: muly max
       - name: "test2"
-        run: echo "${{ steps.test_id.outputs.time }}"
+        run: |
+          echo "${{ steps.test_id.outputs.time }}"
+          ls -la
